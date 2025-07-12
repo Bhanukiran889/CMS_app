@@ -1,0 +1,159 @@
+.cms-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2.5rem 3rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cms-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.note-box {
+  background-color: #f7fafc;
+  border: 1px solid #dce4ec;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.note-box p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.preview {
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px dashed #ccc;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.toggle-btn {
+  background-color: #ffb02e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e29b22;
+}
+
+.cms-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cms-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.cms-form textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+  transition: border-color 0.3s ease;
+}
+
+.cms-form textarea:focus {
+  border-color: #ffb02e;
+  outline: none;
+}
+
+.cms-form button[type="submit"] {
+  background-color: #ffb02e;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.cms-form button[type="submit"]:hover {
+  background-color: #e29b22;
+}
+
+.success-msg {
+  color: green;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+.submit-btn {
+  background-color: #ffb02e;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #e29b22;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Pulse effect during submission */
+.submitting {
+  animation: pulseBtn 1.6s infinite;
+}
+
+@keyframes pulseBtn {
+  0% {
+    background-color: #ffb02e;
+  }
+  25% {
+    background-color: #f4a528;
+  }
+  50% {
+    background-color: #eaa638ff;
+  }
+  75% {
+    background-color: #e69109ff;
+  }
+  100% {
+    background-color: #ffb02e;
+  }
+}
+
