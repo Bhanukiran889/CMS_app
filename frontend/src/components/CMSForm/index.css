@@ -136,7 +136,7 @@
 
 /* Pulse effect during submission */
 .submitting {
-  animation: pulseBtn 1.6s infinite;
+  animation: pulseBtn 2s infinite;
 }
 
 @keyframes pulseBtn {

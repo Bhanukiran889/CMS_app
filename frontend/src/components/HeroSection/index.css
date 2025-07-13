@@ -8,8 +8,10 @@
 
 .hero-heading {
   font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 1.3;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 68px;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtext {
