@@ -1,30 +1,159 @@
 .hero {
-  padding: 4rem 2rem;
-  background-color: #fff;
+  position: relative;
+  display: flex;
+  min-height: 70vh;
+  padding: 30px 30px 30px 130px;
+  background-image: linear-gradient(to bottom, #fff, #fff7ec);
+  overflow: hidden;
+}
+
+/* Side background (bottom-right full height) */
+.bg-search {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Side background (top-left corner decoration) */
+.bg-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 120px;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Main text content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
   text-align: left;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .hero-heading {
-  font-size: 2.5rem;
+  font-size: 60px;
   font-weight: 600;
-  font-style: SemiBold;
-  line-height: 68px;
   letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.3;
 }
 
 .hero-subtext {
-  margin-top: 1rem;
   font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
   max-width: 600px;
 }
 
 .hero-button {
-  margin-top: 2rem;
-  background-color: #ffb02e;
+  background-color: #FFBD59;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #e09a22;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+  }
+
+  .bg-search,
+  .bg-side {
+    display: none;
+  }
+}
+.skeleton-container{
+  margin-top: 70px;
+}
+.skeleton-heading,
+.skeleton-subtext,
+.skeleton-button {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-heading {
+  height: 3rem; /* Match approx. h1 height */
+  margin-bottom: 1.8rem;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.head-width1{
+  width:750px;
+}
+.head-width2{
+  width:600px;
+}
+.head-width3{
+  width:700px;
+}
+.head-width4{
+  width:560px;
+}
+
+.skeleton-subtext {
+  width: 60%;
+  height: 0.8rem; /* Match p font-size */
+  background-color: #e0e0e0;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.subtext-width1{
+  width: 600px;
+}
+.subtext-width2{
+  width: 500px;
+}
+.subtext-width3{
+  width: 250px;
+}
+
+.skeleton-button {
+  width: 8rem;     /* ~150px */
+  height: 2.75rem; /* ~44px */
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+/* Pulsing animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
