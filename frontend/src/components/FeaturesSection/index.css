@@ -1,8 +1,99 @@
-.features-section {
-  padding: 3rem 2rem;
-  background-color: #fdfdfd;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+.timeline-section {
+  padding: 4rem 1rem;
+  background-color: #fff;
+  overflow-x: auto;
+  background-image: url("../../assets/Background-pattern.png");
+  background-size: cover;
+}
+
+.timeline-wrapper {
+  position: relative;
+  height: 300px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Timeline line (gray) */
+.progress-line-background {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e6e6e6;
+  z-index: 1;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+
+/* Timeline filled (green) */
+.progress-line-filled {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  background-color: #38b26d;
+  z-index: 2;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Dots and their card positions */
+.timeline-point {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+}
+
+/* Dots */
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #38b26d;
+}
+
+/* Cards */
+.card {
+  width: 240px;
+  background-color: #fff7ec;
+  padding: 1rem;
+  border-radius: 8px;
+  position: absolute;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card.top {
+  bottom: 130%;
+}
+
+.card.bottom {
+  top: 130%;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #111;
+}
+
+.card p {
+  font-size: 0.875rem;
+  color: #555;
 }
