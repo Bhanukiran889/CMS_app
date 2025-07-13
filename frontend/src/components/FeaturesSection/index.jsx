@@ -26,8 +26,8 @@ const FeaturesSection = () => {
               className={`feature-dot ${index === currentIndex ? 'active' : ''}`}
               onClick={() => setCurrentIndex(index)}
             />
-            <div className={`feature-card ${index % 2 === 0 ? 'top' : 'bottom'}`}>
-              <div className="feature-icon">{feature.icon}</div>
+            <div className={`feature-card ${index % 2 === 1 ? 'top' : 'bottom'}`}>
+              < img src={feature.icon} className="feature-ico"/>
               <h4>{feature.title}</h4>
               <p>{feature.description}</p>
             </div>
