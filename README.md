@@ -15,7 +15,7 @@ A responsive landing page for ABC Company powered by a CMS to update the main he
 
 ## 🚀 Live Demo
 
-🔗 [Frontend Deployed Website](https://your-client-url.vercel.app)
+🔗 [Frontend Deployed Website](https://cms-app-flax.vercel.app/cms)
 
 🔗 [CMS Backend API](https://cms-app-b9fg.onrender.com/api/heading)
 
