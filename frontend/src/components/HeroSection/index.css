@@ -100,7 +100,7 @@
 }
 
 .skeleton-heading {
-  height: 3rem; /* Match approx. h1 height */
+  height: 3rem;
   margin-bottom: 1.8rem;
   background-color: #e0e0e0;
   border-radius: 8px;
@@ -121,7 +121,7 @@
 
 .skeleton-subtext {
   width: 60%;
-  height: 0.8rem; /* Match p font-size */
+  height: 0.8rem; 
   background-color: #e0e0e0;
   margin-bottom: 0.4rem;
   border-radius: 6px;

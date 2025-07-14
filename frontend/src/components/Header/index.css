@@ -3,7 +3,7 @@
   padding: 20px 32px;
   border-bottom: 1px solid #e8e8e8;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
 }
 
 .header-inner {
@@ -19,7 +19,7 @@
   align-items: center;
   gap: 1.5rem;
   font-size: 14px;
-  margin: 0 auto; /* center this */
+  margin: 0 auto;
 }
 
 .services-dropdown {

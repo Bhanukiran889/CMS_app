@@ -89,7 +89,6 @@
   z-index: 5;
 }
 
-/* Increased distance between dot and card */
 .feature-card.top {
   bottom: calc(100% + 30px);
 }
